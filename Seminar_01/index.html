@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script src="task_01.js"></script> -->
+    <script src="task_02.js"></script>
+
+    <div>Element 1</div>
+    <div data-active="true">Element 2</div>
+    <div>Element 3</div>
+    <div data-active="true">Element 4</div>
+
+    <script>
+        
+        const divEl = document.querySelectorAll('div');
+        const arrDivEl = Array.from(divEl);
+
+        // const actDiv = arrDivEl.filter(element => element.dataset.active);
+        const actDiv = arrDivEl.filter(element => element.hasAttribute('data-active'));
+
+        actDiv.forEach(element => {
+            console.log(element);
+        });
+
+
+    </script>
+</body>
+</html>
