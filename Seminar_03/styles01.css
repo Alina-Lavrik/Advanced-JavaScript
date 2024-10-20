@@ -1,0 +1,10 @@
+.news-container {
+    max-width: 600px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(188, 200, 201);
+}
+
+h1 {
+ color: blue;
+}
